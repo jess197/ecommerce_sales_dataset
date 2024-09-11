@@ -52,6 +52,8 @@ Os dados lidos são então escritos no Data Lake como uma tabela no nível bronz
 
 O nível bronze armazena dados brutos com mínimas transformações, servindo como a camada de armazenamento inicial dos dados após a ingestão.
 
+<hr>
+
 #### 5. CAMADA SILVER
 
 ##### 1. Seleção e Renomeação de Colunas
@@ -76,6 +78,8 @@ Este ajuste foi feito para garantir a padronização dos dados relacionados aos 
 
 ##### 4. Escrita dos Dados no Nível Silver
 Finalmente, o DataFrame tratado é salvo em um formato Delta no nível silver, substituindo qualquer arquivo existente no caminho especificado. O uso do formato Delta facilita a versionamento dos dados e otimiza as consultas futuras.
+
+<hr>
 
 #### 6. CAMADA GOLD 
 
@@ -117,5 +121,5 @@ Além do formato Delta, os mesmos DataFrames são também gravados no formato Pa
 
 Esse processo cria uma versão dos dados em um formato leve e eficiente, com compressão colunar, o que facilita consultas rápidas e armazenamento otimizado.
 
-
+<hr>
 
