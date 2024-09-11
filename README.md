@@ -83,7 +83,7 @@ Finalmente, o DataFrame tratado é salvo em um formato Delta no nível silver, s
 
 #### 6. CAMADA GOLD 
 
-Este notebook no Databricks é projetado para transformar dados de vendas em uma estrutura de Data Warehouse ao criar dimensões e uma tabela de fatos a partir dos dados processados no nível silver. Os dados são então armazenados em duas formas diferentes no nível gold: no formato Delta e Parquet. A seguir, as principais etapas e objetivos do código são explicados.
+Este notebook no Databricks é projetado para transformar dados de vendas em dimensões e uma tabela de fatos a partir dos dados processados no nível silver. Os dados são então armazenados em duas formas diferentes no nível gold: no formato Delta e Parquet. A seguir, as principais etapas e objetivos do código são explicados.
 
 ##### 1. Importação de Bibliotecas
 O código começa com a importação da biblioteca pyspark.sql.functions como fn, que fornece funções para manipulação de DataFrames no PySpark.
@@ -124,5 +124,5 @@ Esse processo cria uma versão dos dados em um formato leve e eficiente, com com
 <hr>
 
 ### 6. TECH STACK  
-<img src="img/azure.png" alt="azure" style="vertical-align:top; margin:4px; height:40px; width:40px"><img src="img/python.png" alt="python" style="vertical-align:top; margin:4px; height:40px; width:40px"><img src="img/databricks.png" alt="databricks" style="vertical-align:top; margin:4px; height:40px; width:40px"><img src="img/sql.png" alt="sql" style="vertical-align:top; margin:4px; height:40px; width:40px"><img src="img/data-quality.png" alt="data-quality" style="vertical-align:top; margin:4px; height:40px; width:40px"><img src="img/apache_spark.png" alt="spark" style="vertical-align:top; margin:4px; height:60px; width:90px"><img src="img/deltalake-logo.png" alt="deltalake" style="vertical-align:top; margin:4px; height:60px; width:90px">
+<img src="06.img/azure.png" alt="azure" style="vertical-align:top; margin:4px; height:40px; width:40px"><img src="06.img/python.png" alt="python" style="vertical-align:top; margin:4px; height:40px; width:40px"><img src="06.img/databricks.png" alt="databricks" style="vertical-align:top; margin:4px; height:40px; width:40px"><img src="06.img/sql.png" alt="sql" style="vertical-align:top; margin:4px; height:40px; width:40px"><img src="06.img/data-quality.png" alt="data-quality" style="vertical-align:top; margin:4px; height:40px; width:40px"><img src="06.img/apache_spark.png" alt="spark" style="vertical-align:top; margin:4px; height:60px; width:90px"><img src="06.img/deltalake-logo.png" alt="deltalake" style="vertical-align:top; margin:4px; height:60px; width:90px">
 
