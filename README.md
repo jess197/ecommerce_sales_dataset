@@ -6,7 +6,7 @@ O objetivo do desafio é montar uma arquitetura medalhão (bronze, silver,gold) 
 
 Foi realizado também algumas consultas exploratórias diponibilizadas na pasta:
 
-[Analytics](04.analysis/)</p>
+[Analysis](04.analysis/)</p>
 
 
 ### 2. DATA ARCHITECTURE
