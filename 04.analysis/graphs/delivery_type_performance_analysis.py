@@ -115,5 +115,6 @@ ax.legend(title='Tipo de Entrega', fontsize=12, labels=['Expedited', 'Standard']
 plt.xticks(rotation=45, ha='right')
 plt.tight_layout()
 
+
 # Exibindo o gráfico no Streamlit
 st.pyplot(fig)

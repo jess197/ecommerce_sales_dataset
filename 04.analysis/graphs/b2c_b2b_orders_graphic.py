@@ -83,6 +83,8 @@ ax.set_xticklabels(df['B2B_BC2'], rotation=45, ha='right')
 # Ajuste no layout para evitar sobreposição
 plt.tight_layout()
 
+
+
 # Exibindo o gráfico no Streamlit
 st.pyplot(fig)
 
