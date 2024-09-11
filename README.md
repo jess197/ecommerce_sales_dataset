@@ -1,6 +1,8 @@
-# ECOMMERCE SALES DATASET
-<hr>
-# Sumário
+# 📈📊 ECOMMERCE SALES DATASET 🛒 💵
+
+
+
+## Sumário
 
 - [OBJETIVO](#1-objetivo)
 - [DATA ARCHITECTURE](#2-data-architecture)
