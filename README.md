@@ -1,5 +1,16 @@
 # ECOMMERCE SALES DATASET
 <hr>
+# Sumário
+
+- [OBJETIVO](#1-objetivo)
+- [DATA ARCHITECTURE](#2-data-architecture)
+- [DATASET DIAGRAM](#3-dataset-diagram)
+- [MEDALLION ARCHITECTURE](#4-medallion-architecture)
+- [PIPELINE](#5-pipeline)
+- [ANALYSIS](#6-analysis)
+- [TECH STACK](#7-tech-stack)
+
+<hr>
 
 ### 1. OBJETIVO
 O objetivo do desafio é montar uma arquitetura medalhão (bronze, silver,gold) utilizando o databricks, a fonte de dados deve ser um conjunto de dados do Kaggle relacionado à vendas. A disponibilização dos dados da gold devem ser realizadas em formato parquet e delta (aproveitando funcionalidades de versionamento e transações ACID).
@@ -23,7 +34,9 @@ Foi realizado também algumas consultas exploratórias diponibilizadas na pasta:
 
 <hr>
 
-#### 4. CAMADA BRONZE
+### 4. MEDALLION ARCHITECTURE
+
+#### CAMADA BRONZE
 Realizar a ingestão e o tratamento inicial de um arquivo CSV de relatórios de vendas da Amazon, armazenado em um Data Lake no Azure Databricks. Abaixo estão as principais etapas e objetivos:
 
 ##### 1. Listagem de Arquivos no Diretório Landing
@@ -54,7 +67,7 @@ O nível bronze armazena dados brutos com mínimas transformações, servindo co
 
 <hr>
 
-#### 5. CAMADA SILVER
+#### CAMADA SILVER
 
 ##### 1. Seleção e Renomeação de Colunas
 A primeira parte do código seleciona e renomeia colunas da tabela bronze sales_bronze.tb_amz_sales_report para preparar os dados no nível silver. Algumas colunas foram renomeadas para padronização, enquanto outras foram transformadas para garantir a consistência dos dados. Por exemplo:
@@ -81,7 +94,7 @@ Finalmente, o DataFrame tratado é salvo em um formato Delta no nível silver, s
 
 <hr>
 
-#### 6. CAMADA GOLD 
+#### CAMADA GOLD 
 
 Este notebook no Databricks é projetado para transformar dados de vendas em dimensões e uma tabela de fatos a partir dos dados processados no nível silver. Os dados são então armazenados em duas formas diferentes no nível gold: no formato Delta e Parquet. A seguir, as principais etapas e objetivos do código são explicados.
 
@@ -123,7 +136,7 @@ Esse processo cria uma versão dos dados em um formato leve e eficiente, com com
 
 <hr>
 
-### 8. PIPELINE
+### 5. PIPELINE
 
 ##### 1. Pipeline Running with Success
 ![Project Architecture](06.img/pipeline_ecommerce_sales_dataset.png)
@@ -132,7 +145,7 @@ Esse processo cria uma versão dos dados em um formato leve e eficiente, com com
 ![Project Architecture](06.img/pipeline1_ecommerce_sales_dataset.png)
 
 
-### 8. ANALYSIS
+### 6. ANALYSIS
 - Objetivo: Comparar o desempenho das vendas entre clientes B2B e B2C.
 ![Project Architecture](06.img/b2b_b2c_analysis_graph.png)
 
@@ -144,6 +157,6 @@ Esse processo cria uma versão dos dados em um formato leve e eficiente, com com
 
 
 
-### 9. TECH STACK  
+### 7. TECH STACK  
 <img src="06.img/azure.png" alt="azure" style="vertical-align:top; margin:4px; height:40px; width:40px"><img src="06.img/python.png" alt="python" style="vertical-align:top; margin:4px; height:40px; width:40px"><img src="06.img/databricks.png" alt="databricks" style="vertical-align:top; margin:4px; height:40px; width:40px"><img src="06.img/sql.png" alt="sql" style="vertical-align:top; margin:4px; height:40px; width:40px"><img src="06.img/data-quality.png" alt="data-quality" style="vertical-align:top; margin:4px; height:40px; width:40px"><img src="06.img/apache_spark.png" alt="spark" style="vertical-align:top; margin:4px; height:60px; width:90px"><img src="06.img/deltalake-logo.png" alt="deltalake" style="vertical-align:top; margin:4px; height:60px; width:90px">
 
