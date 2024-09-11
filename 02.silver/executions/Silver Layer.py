@@ -47,8 +47,15 @@ df_amz_sales_report_silver = (
 
 df_amz_sales_report_silver_treated = (
     df_amz_sales_report_silver
+    .withColumn('Ship_State', 
+                fn.when(fn.col('Ship_State') == 'RJ', 'RAJSHTHAN')
+                .when(fn.col('Ship_State') == 'NL', 'NAGALAND')
+                .when(fn.col('Ship_State') == 'AR', 'ARUNACHAL PRADESH')
+                .when(fn.col('Ship_State') == 'PB', 'PUNJAB')
+                .otherwise(fn.col('Ship_State')))
     .withColumn('Price', fn.coalesce(fn.col('Price'), fn.lit(0)))
 )
+
 
 # COMMAND ----------
 
