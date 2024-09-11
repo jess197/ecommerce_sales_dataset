@@ -7,8 +7,6 @@ from databricks import sql
 import os
 import seaborn as sns
 
-# Inicializando SparkSession
-#spark = SparkSession.builder.appName("StreamlitApp").getOrCreate()
 
 # Executando a consulta SQL no Spark
 BASE_QUERY = """
@@ -33,9 +31,9 @@ class Databricks:
 
     def __init__(self):
         self.connection = sql.connect(
-            server_hostname= "adb-3071876298786017.17.azuredatabricks.net",#os.environ['server_hostname'],
-            http_path= "sql/protocolv1/o/3071876298786017/0909-012602-u5afvl2p",#os.environ['http_path'],
-            access_token="dapi8866332dff6118b9e83c46c5b20bd82b-3"#s.environ['access_token'],
+            server_hostname=os.environ['server_hostname'],
+            http_path=os.environ['http_path'],
+            access_token=os.environ['access_token'],
         )
 
     def get_result(self):

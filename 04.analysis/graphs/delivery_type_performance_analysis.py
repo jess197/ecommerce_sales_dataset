@@ -7,9 +7,6 @@ from databricks import sql
 import os
 import seaborn as sns
 
-# Inicializando SparkSession
-#spark = SparkSession.builder.appName("StreamlitApp").getOrCreate()
-
 # Executando a consulta SQL no Spark
 BASE_QUERY = """
 WITH Status_Counts AS (
