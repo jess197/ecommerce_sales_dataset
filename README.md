@@ -139,6 +139,7 @@ Esse processo cria uma versão dos dados em um formato leve e eficiente, com com
 <br>
 
  - Objetivo: Avaliar qual a preferência de tipo de entrega escolhido pelos clientes por estado
+   
 ![Project Architecture](06.img/delivery_type_performance_analysis.png)
 
 
