@@ -136,6 +136,11 @@ Esse processo cria uma versão dos dados em um formato leve e eficiente, com com
 - Objetivo: Comparar o desempenho das vendas entre clientes B2B e B2C.
 ![Project Architecture](06.img/b2b_b2c_analysis_graph.png)
 
+<br>
+
+ - Objetivo: Avaliar qual a preferência de tipo de entrega escolhido pelos clientes por estado
+![Project Architecture](06.delivery_type_performance_analysis.png)
+
 
 
 ### 9. TECH STACK  
