@@ -132,6 +132,12 @@ Esse processo cria uma versão dos dados em um formato leve e eficiente, com com
 ![Project Architecture](06.img/pipeline1_ecommerce_sales_dataset.png)
 
 
-### 8. TECH STACK  
+### 8. ANALYSIS
+- Objetivo: Comparar o desempenho das vendas entre clientes B2B e B2C.
+![Project Architecture](06.img/b2b_b2c_analysis_graph.png)
+
+
+
+### 9. TECH STACK  
 <img src="06.img/azure.png" alt="azure" style="vertical-align:top; margin:4px; height:40px; width:40px"><img src="06.img/python.png" alt="python" style="vertical-align:top; margin:4px; height:40px; width:40px"><img src="06.img/databricks.png" alt="databricks" style="vertical-align:top; margin:4px; height:40px; width:40px"><img src="06.img/sql.png" alt="sql" style="vertical-align:top; margin:4px; height:40px; width:40px"><img src="06.img/data-quality.png" alt="data-quality" style="vertical-align:top; margin:4px; height:40px; width:40px"><img src="06.img/apache_spark.png" alt="spark" style="vertical-align:top; margin:4px; height:60px; width:90px"><img src="06.img/deltalake-logo.png" alt="deltalake" style="vertical-align:top; margin:4px; height:60px; width:90px">
 
